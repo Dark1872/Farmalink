@@ -1,72 +1,228 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NexaWeb Solutions</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>FarmaLink - Presentación del Proyecto</title>
+  <link rel="stylesheet" href="styles_solution.css">
 </head>
-<body>
 
+<body>
+  <!-- Header -->
   <header class="header">
-    <img src="logo.png" alt="Logo NexaWeb" class="logo">
-    <h1>NexaWeb Solutions S.A.S.</h1>
-    <p>Soluciones digitales modernas</p>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <svg width="36" height="36" viewBox="0 0 40 40" fill="none">
+            <rect width="40" height="40" rx="8" fill="#4F46E5" />
+            <path d="M20 10v20M10 20h20" stroke="white" stroke-width="3" stroke-linecap="round" />
+          </svg>
+          <span class="logo-text">FarmaLink</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#solucion">Solución</a></li>
+
+        </ul>
+      </div>
+    </nav>
   </header>
 
-  <main class="container">
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero-title">FarmaLink</h1>
+      <p class="hero-subtitle">Plataforma inteligente para buscar medicamentos, comparar precios y encontrar farmacias
+        cercanas</p>
+      <div class="hero-badges">
+        <span class="badge">Precios en Tiempo Real</span>
+        <span class="badge">Recomendaciones con IA</span>
+        <span class="badge">Microservicios</span>
+      </div>
+    </div>
+  </section>
 
-    <section class="card">
-      <h2>Integrantes</h2>
-      <ul>
-        <li>Sergio Andrés Merchán Rozo</li>
-        <li>Eduar Fabián Ultengo Pedraza</li>
-        <li>Daniel Leonardo González Torres</li>
-      </ul>
+  <!-- Solución -->
+  <section id="solucion_propuesta">
+    <section id="solucion" class="solution">
+      <div class="container">
+        <h2 class="section-title">Solución Propuesta</h2>
+        <p class="section-intro">FarmaLink resuelve la dificultad de encontrar medicamentos al mejor precio mediante una
+          plataforma centralizada e inteligente.</p>
+
+        <div class="solution-grid">
+          <div class="solution-card">
+            <div class="card-number">01</div>
+            <h3>Comparación en Tiempo Real</h3>
+            <p>Consulta automática de precios en múltiples farmacias, mostrando la opción más económica al instante.</p>
+          </div>
+
+          <div class="solution-card">
+            <div class="card-number">02</div>
+            <h3>Geolocalización</h3>
+            <p>Mapa interactivo que muestra farmacias cercanas con disponibilidad del medicamento buscado.</p>
+          </div>
+
+          <div class="solution-card">
+            <div class="card-number">03</div>
+            <h3>Análisis Histórico</h3>
+            <p>Gráficos de evolución de precios que permiten tomar decisiones informadas sobre cuándo comprar.</p>
+          </div>
+
+          <div class="solution-card">
+            <div class="card-number">04</div>
+            <h3>IA Personalizada</h3>
+            <p>Recomendaciones inteligentes basadas en patrones de búsqueda, preferencias y alternativas genéricas.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="card">
-      <h2>Razón Social</h2>
-      <p>
-        NexaWeb Solutions S.A.S. es una empresa dedicada al diseño y desarrollo
-        de soluciones web modernas, enfocadas en mejorar la presencia digital
-        de empresas y emprendimientos mediante tecnología eficiente y segura.
-      </p>
+    <!-- Funcionalidades -->
+    <section id="funcionalidades" class="features">
+      <div class="container">
+        <h2 class="section-title">Funcionalidades Principales</h2>
+
+        <div class="features-grid">
+          <div class="feature-item">
+            <div class="feature-icon">🔍</div>
+            <h3>Búsqueda Inteligente</h3>
+            <p>Motor de búsqueda con autocompletado y filtros avanzados por precio, ubicación y disponibilidad.</p>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">💰</div>
+            <h3>Comparador de Precios</h3>
+            <p>Visualización de precios de múltiples farmacias en tiempo real con indicador de mejor oferta.</p>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">📍</div>
+            <h3>Mapa de Farmacias</h3>
+            <p>Integración con Google Maps para ubicar farmacias cercanas con rutas y horarios.</p>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">📊</div>
+            <h3>Gráficos de Tendencias</h3>
+            <p>Visualización del histórico de precios con gráficos interactivos para detectar patrones.</p>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">🤖</div>
+            <h3>Recomendaciones IA</h3>
+            <p>Sistema inteligente que sugiere alternativas genéricas y opciones más económicas.</p>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">👤</div>
+            <h3>Perfil Personalizado</h3>
+            <p>Historial de búsquedas, favoritos y alertas de cambios de precio en medicamentos.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="card">
-      <h2>Misión</h2>
-      <p>
-        Desarrollar soluciones web eficientes, seguras e innovadoras,
-        aplicando buenas prácticas de programación y diseño, que generen
-        valor real para nuestros clientes.
-      </p>
+    <!-- Tecnología y Diseño -->
+    <section id="tecnologia" class="technology">
+      <div class="container">
+        <h2 class="section-title">Arquitectura y Diseño</h2>
+
+        <div class="tech-content">
+          <!-- Stack Tecnológico -->
+          <div class="tech-block">
+            <h3>Stack Tecnológico</h3>
+            <div class="tech-tags">
+              <span class="tech-tag frontend">React</span>
+              <span class="tech-tag frontend">TypeScript</span>
+              <span class="tech-tag backend">Node.js</span>
+              <span class="tech-tag backend">Express.js</span>
+              <span class="tech-tag devops">Docker</span>
+              <span class="tech-tag devops">Ngrok</span>
+            </div>
+            <p class="tech-description">Arquitectura de microservicios escalable con frontend en React/TypeScript y
+              backend en Node.js/Express, contenedorizado con Docker.</p>
+          </div>
+
+          <!-- Decisiones de Diseño -->
+          <div class="design-block">
+            <h3>Decisiones de Diseño (HTML + CSS)</h3>
+            <div class="design-points">
+              <div class="design-point">
+                <strong>HTML Semántico:</strong> Uso de etiquetas semánticas para accesibilidad y SEO
+              </div>
+              <div class="design-point">
+                <strong>CSS Grid/Flexbox:</strong> Layout responsive sin frameworks externos
+              </div>
+              <div class="design-point">
+                <strong>Variables CSS:</strong> Sistema de diseño coherente y mantenible
+              </div>
+              <div class="design-point">
+                <strong>Mobile First:</strong> Optimizado para dispositivos móviles
+              </div>
+            </div>
+          </div>
+
+          <!-- Organización de la Página -->
+          <div class="organization-block">
+            <h3>Arquitectura de la Página</h3>
+            <img src="images/farmalink-architecture.png"></image>
+          </div>
+
+          <!-- Experiencia de Usuario -->
+          <div class="ux-block">
+            <h3>Experiencia de Usuario</h3>
+            <div class="ux-features">
+              <div class="ux-item">
+                <span class="ux-icon">✓</span>
+                <span>Jerarquía visual clara con tipografías diferenciadas</span>
+              </div>
+              <div class="ux-item">
+                <span class="ux-icon">✓</span>
+                <span>Navegación intuitiva con scroll suave entre secciones</span>
+              </div>
+              <div class="ux-item">
+                <span class="ux-icon">✓</span>
+                <span>Microinteracciones en hover para feedback inmediato</span>
+              </div>
+              <div class="ux-item">
+                <span class="ux-icon">✓</span>
+                <span>Paleta de colores accesible y profesional</span>
+              </div>
+              <div class="ux-item">
+                <span class="ux-icon">✓</span>
+                <span>Contenido escaneable con secciones bien definidas</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="images" class="Croquis">
+        <img src="images/prototipo_1.png"/>
+        <img src="images/prototipo_2.png"/>
+        <img src="images/prototipo_3.png"/>
+        <img src="images/prototipo_4.png"/>
+      </div>
     </section>
+  </section>
 
-    <section class="card">
-      <h2>Visión</h2>
-      <p>
-        Ser una empresa reconocida a nivel nacional por la calidad,
-        innovación y confiabilidad de nuestras soluciones web.
-      </p>
-    </section>
-
-    <section class="card">
-      <h2>Objetivos</h2>
-      <ul>
-        <li>Aplicar buenas prácticas de desarrollo web.</li>
-        <li>Crear sitios web modernos y responsivos.</li>
-        <li>Mejorar la experiencia de usuario.</li>
-        <li>Fortalecer el trabajo en equipo.</li>
-        <li>Desarrollar soluciones enfocadas en necesidades reales.</li>
-      </ul>
-    </section>
-
-  </main>
-
+  <!-- Footer -->
   <footer class="footer">
-    <p>© 2026 NexaWeb Solutions S.A.S.</p>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <svg width="32" height="32" viewBox="0 0 40 40" fill="none">
+            <rect width="40" height="40" rx="8" fill="#4F46E5" />
+            <path d="M20 10v20M10 20h20" stroke="white" stroke-width="3" stroke-linecap="round" />
+          </svg>
+          <span>FarmaLink</span>
+        </div>
+        <p class="footer-text">Proyecto de plataforma web inteligente con arquitectura de microservicios</p>
+        <p class="footer-tech">React • TypeScript • Node.js • Express.js • Docker • Ngrok</p>
+      </div>
+    </div>
   </footer>
 
 </body>
+
 </html>

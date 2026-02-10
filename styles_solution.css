@@ -1,0 +1,497 @@
+/* Variables CSS */
+:root {
+    --primary: #4F46E5;
+    --primary-dark: #4338CA;
+    --secondary: #10B981;
+    --accent: #F59E0B;
+    --text-dark: #1F2937;
+    --text-medium: #6B7280;
+    --text-light: #9CA3AF;
+    --bg-white: #FFFFFF;
+    --bg-light: #F9FAFB;
+    --bg-gray: #F3F4F6;
+    --border: #E5E7EB;
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Reset y Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+    background-color: var(--bg-white);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-sm);
+    z-index: 1000;
+}
+
+.navbar {
+    padding: 16px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--text-medium);
+    font-weight: 500;
+    font-size: 15px;
+    transition: color 0.2s;
+}
+
+.nav-menu a:hover {
+    color: var(--primary);
+}
+
+/* Hero */
+.hero {
+    padding: 140px 0 80px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 56px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto 32px;
+    opacity: 0.95;
+    line-height: 1.6;
+}
+
+.hero-badges {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.badge {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Secciones */
+section {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 16px;
+    color: var(--text-dark);
+}
+
+.section-intro {
+    text-align: center;
+    font-size: 18px;
+    color: var(--text-medium);
+    max-width: 700px;
+    margin: 0 auto 48px;
+}
+
+/* Solución */
+.solution {
+    background-color: var(--bg-light);
+}
+
+.solution-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.solution-card {
+    background-color: white;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.solution-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.card-number {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 12px;
+}
+
+.solution-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-dark);
+}
+
+.solution-card p {
+    font-size: 15px;
+    color: var(--text-medium);
+    line-height: 1.6;
+}
+
+/* Funcionalidades */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+}
+
+.feature-item {
+    text-align: center;
+    padding: 24px;
+}
+
+.feature-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.feature-item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-dark);
+}
+
+.feature-item p {
+    font-size: 15px;
+    color: var(--text-medium);
+    line-height: 1.6;
+}
+
+/* Tecnología */
+.technology {
+    background-color: var(--bg-light);
+}
+
+.tech-content {
+    display: grid;
+    gap: 40px;
+}
+
+.tech-block,
+.design-block,
+.organization-block,
+.ux-block {
+    background-color: white;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+}
+
+.tech-block h3,
+.design-block h3,
+.organization-block h3,
+.ux-block h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--text-dark);
+}
+
+/* Stack Tecnológico */
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.tech-tag {
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.tech-tag.frontend {
+    background-color: #DBEAFE;
+    color: #1E40AF;
+}
+
+.tech-tag.backend {
+    background-color: #D1FAE5;
+    color: #065F46;
+}
+
+.tech-tag.devops {
+    background-color: #FEF3C7;
+    color: #92400E;
+}
+
+.tech-description {
+    font-size: 15px;
+    color: var(--text-medium);
+    line-height: 1.6;
+}
+
+/* Decisiones de Diseño */
+.design-points {
+    display: grid;
+    gap: 16px;
+}
+
+.design-point {
+    padding: 12px;
+    background-color: var(--bg-gray);
+    border-radius: 8px;
+    font-size: 15px;
+    color: var(--text-medium);
+}
+
+.design-point strong {
+    color: var(--text-dark);
+}
+
+/* Organización */
+.organization-flow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flow-item {
+    background-color: var(--primary);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.flow-arrow {
+    font-size: 20px;
+    color: var(--text-light);
+}
+
+/* UX Features */
+.ux-features {
+    display: grid;
+    gap: 12px;
+}
+
+.ux-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    background-color: var(--bg-gray);
+    border-radius: 8px;
+    font-size: 15px;
+    color: var(--text-medium);
+}
+
+.ux-icon {
+    color: var(--secondary);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--text-dark);
+    color: white;
+    padding: 48px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.footer-text {
+    font-size: 15px;
+    opacity: 0.8;
+    max-width: 500px;
+}
+
+.footer-tech {
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .solution-grid,
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .organization-flow {
+        flex-direction: column;
+    }
+
+    .flow-arrow {
+        transform: rotate(90deg);
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 100px 0 60px;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    .tech-block,
+    .design-block,
+    .organization-block,
+    .ux-block {
+        padding: 24px;
+    }
+}
+
+.Croquis {
+  display: grid;
+  /* Crea 2 columnas de igual tamaño */
+  grid-template-columns: repeat(2, 1fr); 
+  /* Espaciado entre las imágenes */
+  gap: 15px; 
+  padding: 15px;
+  max-width: 800px; /* Ajusta este valor según el ancho que desees */
+  margin: 0 auto;   /* Centra el contenedor en la página */
+}
+
+.Croquis img {
+  width: 100%;      /* La imagen ocupa todo el ancho de su celda */
+  height: 250px;    /* Altura fija para que todas se vean iguales */
+  object-fit: cover; /* Recorta la imagen para que llene el espacio sin deformarse */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Opcional: En celulares muy pequeños, ponerlas una debajo de otra */
+@media (max-width: 480px) {
+  .Croquis {
+    grid-template-columns: 1fr;
+  }
+}
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.solution-card,
+.feature-item,
+.tech-block,
+.design-block,
+.organization-block,
+.ux-block {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Accesibilidad */
+:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
